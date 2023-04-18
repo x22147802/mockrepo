@@ -1,0 +1,11 @@
+{% load static %}
+
+{% if products %}
+ {% for product in products %}
+   <a href="javascript:void(0)">
+    <span class="font-400 opacity-70 color-white">{{product.product_name}} x {{product.quantity}}</span>
+    <span class="font-400 opacity-70 color-white" style="float:right;">Order Received</span>
+   </a>  
+ {% endfor %} 
+{% endif %} 
+

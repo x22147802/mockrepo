@@ -1,0 +1,280 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>Cloud Kitchen</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+
+    <!-- custom fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+    <script src="{% static 'js/feather.js '%}"></script>
+
+    <style>
+    .bg-toast-green {
+        background-color: #32B056 !important;
+        color: #FFF !important;
+    }
+
+    .bg-toast-red {
+        background-color: #E85050 !important;
+        color: #FFF !important;
+    }
+
+    .bg-toast-info {
+        background-color: #282828 !important;
+        color: #FFF !important;
+    }
+    </style>
+</head>
+
+<body class="theme-dark">
+
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+
+    <div id="page">
+
+        <div class="page-content">
+            <div id="footer-bar" class="footer-bar-3 row m-0">
+                <a href="" class="mt-2 active-footer"> <i class="fa fa-home"></i></a>
+                <a href="/cart" class="mt-2"><i class="fa fa-shopping-cart"></i></a>
+                <a id="animated-cart" href="/orders" class="mt-2" style="display:none;"><i class="fa fa-archive faa-flash animated theme-cl"></i>
+                <a id="general-cart" href="/orders" class="mt-2"><i class="fa fa-archive"></i>
+                </a>
+                
+            </div>
+        
+            <div class="p-2 mt-3 flex-grow-1">
+                <a href="/">
+                    <h1 id="current_address" class="f18 fsn ls1 fw600 ml-2 ff"><i class="fa fa-angle-left font-16 pr-2"></i>
+                        Menu </h1>
+                </a>
+            </div>
+        
+        
+            <!-- search bar -->
+            <div class="content" style="margin-left:20%!important;margin-right:20%!important;">
+                <!-- <div id="searchBar">
+                    <div class="search-box srh search-color rounded-xl mb-3" style="background-color: #1b1b1b;">
+                        <input type="text" id="focus_search" class="border-0 font-14 opacity-70 ml-1"
+                            placeholder="Search for food items" style="color:#fff!important;">
+                    </div>
+                </div> -->
+                <!-- search bar close -->
+        
+                 <!-- quick menu -->
+                 <div id="quickMenu" style="margin-top:30px;">
+                    <div class="d-flex" style="overflow-x:scroll;">
+                        <div class="p-2">
+                            <a {% if active_cat == 'Starters'%} id="menu_active" {% endif%}
+                                href="starters"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-xl silver-border font-istok faded-text fw500 fsn ls1 ff"
+                                style="line-height:0.8;min-width:160px;">Starters</a>
+                        </div>
+                        <div class="p-2">
+                            <a {% if active_cat == 'Chinese'%} id="menu_active" {% endif%}
+                                href="chinese"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-xl silver-border font-istok faded-text fw500 fsn ls1 ff"
+                                style="line-height:0.8;min-width:160px;">Chinese</a>
+                        </div>
+                        <div class="p-2">
+                            <a {% if active_cat == 'Indian'%} id="menu_active" {% endif%}
+                                href="indian"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-xl silver-border font-istok faded-text fw500 fsn ls1 ff"
+                                style="line-height:0.8;min-width:160px;">Indian</a>
+                        </div>
+                        <div class="p-2">
+                            <a {% if active_cat == 'Mexican'%} id="menu_active" {% endif%}
+                                href="mexican"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-xl silver-border font-istok faded-text fw500 fsn ls1 ff"
+                                style="line-height:0.8;min-width:160px;">Mexican</a>
+                        </div>
+                        <div class="p-2">
+                            <a {% if active_cat == 'American'%} id="menu_active" {% endif%}
+                                href="american"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-xl silver-border font-istok faded-text fw500 fsn ls1 ff"
+                                style="line-height:0.8;min-width:160px;">American</a>
+                        </div>
+                        <div class="p-2">
+                            <a {% if active_cat == 'Italian'%} id="menu_active" {% endif%}
+                                href="italian"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-xl silver-border font-istok faded-text fw500 fsn ls1 ff"
+                                style="line-height:0.8;min-width:160px;">Italian</a>
+                        </div>
+                        <div class="p-2">
+                            <a {% if active_cat == 'Main_course'%} id="menu_active" {% endif%}
+                                href="main_course"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-xl silver-border font-istok faded-text fw500 fsn ls1 ff"
+                                style="line-height:0.8;min-width:160px;">Main Course</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- quick menu close -->
+        
+        
+        
+                <!-- products -->
+                <div class="ml-2 mr-2 mt-2">
+        
+                    <div class="row" id="recipes_menu_div">
+                        {% if menu_products %}
+                        {% for product in menu_products %}
+                        <div class="col-12 col-lg-4" style="padding-left:5px;padding-right:5px;margin-bottom:10px;">
+                            <a href="javascript:void(0)" class="menu_product" data-product-id="{{product.product_id}}" >
+                                <div class="card card-style store-bg" data-card-height="280" style="margin:0px!important;">
+                                    <div class="card-center" style="top:45%;left:10%!important;right:10%!important;transform:translateY(-50%)!important;">
+                                        <img class="product-display-image sdow"
+                                            src="/media/{{product.product_image}}"
+                                            alt="">
+                                    </div>
+                                    <div class="card-bottom text-center mb-2">
+                                        <h2 class="color-white font-14 recipe_h2 fw300 fsn ls1">
+                                            {{ product.product_name}}</h2>
+                                        <h2 class="color-white font-14 recipe_h2 fw300 fsn ls1">
+                                            {{product.product_price}} €</h2>
+                                    </div>
+                                    <div class="card-overlay opacity-70"></div>
+                                </div>
+                            </a>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                           <div class="col-12">
+                              <h6 class="align-center mt-5">Sorry could not find any products </h6>
+                            </div>
+                        {% endif %}
+                       
+                       
+                         
+                    </div>
+        
+                    <div class="row" id="search_result_div">
+        
+                    </div>
+        
+                </div>
+                <!-- products end -->
+                <a href="javascript:void(0);" id="t_modal" data-menu="menu-option-1" style="display:none;"></a>
+        
+            </div>
+        
+                <div id="menu-option-1" class="menu menu-box-modal rounded-s custom-modal" data-menu-height="280" data-menu-effect="menu-over">
+                    <div class="menu-title">
+                        <a href="#" class="close-menu pt-2"><i class="fa fa-times-circle"></i></a>
+                    </div>
+                    <div class="content pt-5" id="prod_info">
+                        <h1 id="p_name" class="color-root-black align-center ft-9 fs-26"></h1>
+        
+                        <div class="auto-mg-adj">
+                            <div class="row plus-minus-input">
+                              <div class="col-3 input-group-button" style="padding-left:10px!important;">
+                                <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+                                  <i class="fa fa-minus" aria-hidden="true"></i>
+                                </button>
+                              </div>
+                              <input class="col-6 input-group-field" type="number" id="quant_inp" name="quantity" value="1" readonly>
+                              <input type="hidden" id="current_price" value="">
+                              <input type="hidden" id="product_id" value="">
+                              <div class="input-group-button col-3">
+                                <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                              </div>
+                            </div>
+        
+                        </div>
+                        <p class="alert-text danger-text align-center"></p>
+                        <div class="row mb-0" style="position:relative;top:15px;">
+                            <div class="col-12">
+                                <button id="cart-button" class="btn align-button-center btn-m bg-green-theme font-800 text-uppercase rounded-s" disabled>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+       
+
+        <!-- toast triggers -->
+        <a href="#" id="success_notification_trigger" data-toast="success-notification" style="display:none!important;">
+            <i class="fab font-17 fa-android color-green-dark"></i>
+            <span>Android Style 1</span>
+            <i class="fa fa-angle-right"></i>
+        </a>
+
+        <a href="#" id="failure_notification_trigger" data-toast="failure-notification" style="display:none!important;">
+            <i class="fab font-17 fa-android color-green-dark"></i>
+            <span>Android Style 1</span>
+            <i class="fa fa-angle-right"></i>
+        </a>
+
+        <a href="#" id="info_notification_trigger" data-toast="info-notification" style="display:none!important;">
+            <i class="fab font-17 fa-android color-green-dark"></i>
+            <span>Android Style 1</span>
+            <i class="fa fa-angle-right"></i>
+        </a>
+        <!-- toast triggers end -->
+
+        <!-- toast messages -->
+        <div id="success-notification" data-dismiss="success-notification" data-delay="5000" data-autohide="true"
+            class="notification notification-android bg-toast-green"
+            style="left:0px!important;right:0px!important;top:0px!important;">
+            <i><i data-feather="check-circle"></i></i>
+            <p id="success-notification-message" class="font-14 pt-2" style="color:#FFF;">
+                Success
+            </p>
+        </div>
+
+        <div id="failure-notification" data-dismiss="success-notification" data-delay="5000" data-autohide="true"
+            class="notification notification-android bg-toast-red"
+            style="left:0px!important;right:0px!important;top:0px!important;">
+            <i><i data-feather="frown"></i></i>
+            <p id="failure-notification-message" class="font-14 pt-2" style="color:#FFF;">
+                Failure
+            </p>
+        </div>
+
+        <div id="info-notification" data-dismiss="success-notification" data-delay="5000" data-autohide="true"
+            class="notification notification-android bg-toast-info"
+            style="left:0px!important;right:0px!important;top:0px!important;">
+            <i><i data-feather="truck"></i></i>
+            <p id="info-notification-message" class="font-14 pt-2" style="color:#FFF;">
+                Information
+            </p>
+        </div>
+        <!-- toast messages end -->
+
+
+
+    </div>
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/cheff.js' %}"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#menu_active')[0].scrollIntoView();
+        });
+    </script>
+
+    <script>
+    feather.replace()
+    </script>
+</body>
