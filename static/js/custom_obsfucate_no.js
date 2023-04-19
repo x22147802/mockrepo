@@ -850,47 +850,47 @@ $(document).ready(function () {
 
 
         //Geolocation
-        var geoLocation = $('.get-location');
-        function activate_geolocation() {
-            if ("geolocation" in navigator) {
-                $('.location-support').html('Your browser and device <strong class="color-green-dark">support</strong> Geolocation.');
-            } else {
-                $('.location-support').html('Your browser and device <strong class="color-red-dark">support</strong> Geolocation.');
-            }
-            function geoLocate() {
-                const locationCoordinates = document.querySelector('.location-coordinates');
-                function success(position) {
-                    const latitude = position.coords.latitude;
-                    const longitude = position.coords.longitude;
-                    locationCoordinates.innerHTML = '<strong>Longitude:</strong> ' + longitude + '<br><strong>Latitude:</strong> ' + latitude;
+        // var geoLocation = $('.get-location');
+        // function activate_geolocation() {
+        //     if ("geolocation" in navigator) {
+        //         $('.location-support').html('Your browser and device <strong class="color-green-dark">support</strong> Geolocation.');
+        //     } else {
+        //         $('.location-support').html('Your browser and device <strong class="color-red-dark">support</strong> Geolocation.');
+        //     }
+        //     function geoLocate() {
+        //         const locationCoordinates = document.querySelector('.location-coordinates');
+        //         function success(position) {
+        //             const latitude = position.coords.latitude;
+        //             const longitude = position.coords.longitude;
+        //             locationCoordinates.innerHTML = '<strong>Longitude:</strong> ' + longitude + '<br><strong>Latitude:</strong> ' + latitude;
 
-                    var mapL1 = 'http://maps.google.com/maps?q=';
-                    var mapL2 = latitude + ',';
-                    var mapL3 = longitude;
-                    var mapL4 = '&z=18&t=h&output=embed'
-                    var mapL5 = '&z=18&t=h'
-                    var mapLinkEmbed = mapL1 + mapL2 + mapL3 + mapL4;
-                    var mapLinkAddress = mapL1 + mapL2 + mapL3 + mapL5;
+        //             var mapL1 = 'http://maps.google.com/maps?q=';
+        //             var mapL2 = latitude + ',';
+        //             var mapL3 = longitude;
+        //             var mapL4 = '&z=18&t=h&output=embed'
+        //             var mapL5 = '&z=18&t=h'
+        //             var mapLinkEmbed = mapL1 + mapL2 + mapL3 + mapL4;
+        //             var mapLinkAddress = mapL1 + mapL2 + mapL3 + mapL5;
 
-                    $('.location-map').after('<iframe class="location-map" src="' + mapLinkEmbed + '"></iframe> <div class="clearfix"></div>');
-                    $('.location-map').parent().after(' <a href=' + mapLinkAddress + ' class="btn btn-full btn-l bg-red-dark rounded-0 font-700 mb-n1">View on Google Maps</a>');
-                }
-                function error() {
-                    locationCoordinates.textContent = 'Unable to retrieve your location';
-                }
-                if (!navigator.geolocation) {
-                    locationCoordinates.textContent = 'Geolocation is not supported by your browser';
-                } else {
-                    locationCoordinates.textContent = 'Locating';
-                    navigator.geolocation.getCurrentPosition(success, error);
-                }
-            }
-            $('.get-location').on('click', function () {
-                $(this).addClass('disabled');
-                geoLocate();
-            });
-        };
-        if (geoLocation.length) { activate_geolocation(); }
+        //             $('.location-map').after('<iframe class="location-map" src="' + mapLinkEmbed + '"></iframe> <div class="clearfix"></div>');
+        //             $('.location-map').parent().after(' <a href=' + mapLinkAddress + ' class="btn btn-full btn-l bg-red-dark rounded-0 font-700 mb-n1">View on Google Maps</a>');
+        //         }
+        //         function error() {
+        //             locationCoordinates.textContent = 'Unable to retrieve your location';
+        //         }
+        //         if (!navigator.geolocation) {
+        //             locationCoordinates.textContent = 'Geolocation is not supported by your browser';
+        //         } else {
+        //             locationCoordinates.textContent = 'Locating';
+        //             navigator.geolocation.getCurrentPosition(success, error);
+        //         }
+        //     }
+        //     $('.get-location').on('click', function () {
+        //         $(this).addClass('disabled');
+        //         geoLocate();
+        //     });
+        // };
+        // if (geoLocation.length) { activate_geolocation(); }
 
         var emailValidator = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
         var phoneValidator = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;

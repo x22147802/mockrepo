@@ -1,189 +1,60 @@
-/* colors */
-
 .color-root-black {
-    color: #0f1117;
-}
-
-.color-root-yellow {
-    color: #FFDD21;
-    /* letter-spacing: 1.5px; */
-}
-
-.color-root-yellow span {
-    color: #FFEE93;
+    color: #0f1117 !important;
 }
 
 .color-white{
-    color:#fff;
+    color:#fff!important;
 }
 
 .bg-pending
 {
-    background-color:#A53F5F;
+    background-color:#A53F5F!important;
     color:#fff;
 }
 
 .bg-one
 {
-    border: 1px solid #A53F5F;
-}
-
-.bg-two
-{
-    border: 1px solid #8CC152;
-}
-
-/* colors end */
-
-
-/****************login css start ***************/
-
-.login_bg {
-    background: url(../../assets/images/icons/login_bg.png) top left no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    padding-top: 70px;
-    position: absolute;
-    z-index: -1;
-    background-position: 91% -30px;
-}
-
-.ls15 {
-    letter-spacing: 1.5px;
+    border: 1px solid #A53F5F!important;
 }
 
 .ls1 {
     letter-spacing: 1px;
 }
 
-.fwn {
-    font-weight: normal;
-}
-
 .ff {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Varela Round', sans-serif !important;
 }
-
-
-/***************login css end********************/
-
-
-/* font-style */
-
 .font-poppins {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Varela Round', sans-serif !important;
     font-weight: 700;
     letter-spacing: 0.03em;
     font-style: italic;
 }
-
-.font-1000 {
-    font-weight: bold;
-}
-
-
-/* font-style ends */
-
-
-/* buttons */
-
-.authentication-buttons {
-    background-color: #2CAA48;
-}
-
-.atb .authentication-buttons {
-    background-color: #2CAA48;
-    border-bottom: 5px solid #277a43;
-}
-
-
-/* buttons ends */
-
-
-/* fast food logo login */
-
-.otp-logo-margin {
-    margin-top: 25%;
-    margin-left: 48%;
-    margin-right: 48%;
-}
-
-.logo-margin {
-    /* margin-top: 15%; */
-    margin-left: 48%;
-    margin-right: 48%;
-}
-
-.register-logo-margin {
-    margin-top: 22%;
-    margin-left: 48%;
-    margin-right: 48%;
-}
-
-
-/* fast food logo login ends */
-
-
 /* utilities */
 
 .o_btn
 {
-    border-radius:12px;
+    border-radius:12px!important;
 }
 
 .align-button-center
 {
     display:block;
     width:50%;
-    margin: 0 auto;
-}
-
-.opt_ctn 
-{
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
 }
 
 .ft-9{
-font-weight:900;
-}
-
-.fs-14
-{
-    font-size:14px;
-}
-
-.fs-16
-{
-    font-size:16px;
-}
-
-.fs-18
-{
-    font-size:18px;
+font-weight:900!important;
 }
 .fs-20
 {
-    font-size:20px;
-}
-
-.fs-22
-{
-    font-size:22px;
-}
-
-.fs-24
-{
-    font-size:24px; 
+    font-size:20px!important;
 }
 
 .fs-26
 {
-    font-size:26px;
+    font-size:26px!important;
 }
 
 .c_prod_name
@@ -202,264 +73,34 @@ font-weight:900;
 }
 .store-bg
 {
-    background:linear-gradient(to right,#141e30, #243b55);
+    background:linear-gradient(to right,#141e30, #243b55) !important;
 }
 
 .align-center {
-    text-align: center;
-}
-
-.social-card-center {
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: translateY(-50%);
-}
-
-.card-center-otp {
-    z-index: 2;
-    background-color: #303030;
-    border-radius: 15px;
-}
-
-.social-bg {
-    background-color: #fff;
-}
-
-.fa-google {
-    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-}
-
-.borders-shadows {
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.width-100 {
-    width: 100%;
-}
-
-.otp_number {
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
-    text-align: center;
-    border: 1px solid #000000;
-    color: #000;
-    border-radius: 5px;
-}
-
-.otp_number::-webkit-inner-spin-button,
-.otp_number::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+    text-align: center !important;
 }
 
 .active-footer i {
-    color: #E9CC65;
-}
-
-.footer-size {
-    font-size: 32px;
+    color: #E9CC65 !important;
 }
 
 .silver-border {
     /* border: 1px solid #52514f; */
-    border: 1px solid #484848;
-    color: rgba(255, 255, 255, .5);
-}
-
-#typeOptions h5 {
-    color: #605D5D;
+    border: 1px solid #484848 !important;
+    color: rgba(255, 255, 255, .5) !important;
 }
 
 #menu_active {
     background: #761641;
-    color: #fff;
+    color: #fff !important;
 }
 
 #menu_active .silver-border {
-    color: #fff;
+    color: #fff !important;
 }
 
 .faded-text {
     color: #52514f;
-}
-
-.margin-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.search-modal-style {
-    /* background-color: #1b1b1b;
-    margin-top: 3rem;
-    width: 95%; */
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-top: 3rem;
-    width: 95%;
-    margin: 0 auto;
-}
-
-.search-modal-close {
-    position: absolute;
-    top: 18px;
-    right: 15px;
-    color: #fff;
-    font-size: 16px;
-}
-
-.search-modal-close:active {
-    color: #fff;
-}
-.mw200 {
-    max-width: 200px;
-}
-.card-vector-bg {
-    /* background-image: url('/assets/images/figma_icons/Vector_background_resized.png');
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw; */
-    /* background-image: url(/assets/images/figma_icons/Vector_background_resized.png); */
-    background-image: url(/assets/images/icons/new_vc_bg.png);
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-position: 0 -20px;
-    width: 100%;
-    background-size: contain;
-}
-
-.bg-custom-blue {
-    background-color: #11389B;
-}
-
-.bg-custom-green {
-    background-color: #699A57;
-}
-
-.bg-custom-red {
-    /* background-color: #ae2f46; */
-    background-color: rgba(168, 27, 52, 0.9);
-}
-
-.float-right {
-    float: right;
-}
-
-.float-left {
-    float: left;
-}
-
-.startcooking_btn {
-    background-color: #E9CC65;
-    color: #0f1117;
-    border-bottom: 5px solid #a99556;
-}
-
-.back-button {
-    /* background-color: rgba(255, 255, 255, 0.3);
-    padding: 15px 15px; */
-    border-radius: 5px;
-    z-index: 99999;
-    line-height: 36px;
-}
-
-
-/* utilities ends */
-
-
-/* customs slider for splash screen */
-
-.splash-screen-slider .card {
-    margin-bottom: 0;
-}
-
-.splash-screen-slider {
-    touch-action: pan-x;
-}
-
-.splash-screen-slider .content {
-    margin-bottom: 0;
-}
-
-.splash-screen-slider {
-    touch-action: pan-x;
-    margin-bottom: 0;
-}
-
-.double-slider {
-    touch-action: pan-y;
-}
-
-.splash-screen-slider .owl-dots {
-    opacity: 0.9;
-    z-index: 1;
-    /* margin-top: -50px; */
-    transform: translateY(-200px);
-    font-size: 12px;
-}
-
-.cover-slider [data-height=cover] {
-    margin-bottom: 0;
-}
-
-
-/* customs slider for splash screen ends */
-
-
-/* Home page  */
-
-
-/* #homeFirstContainer
-{
-  position: relative;
-  height: 300px;
-  width:100%;
-  overflow: hidden;
-  background-color: #609274;
-}
-
-#homeFirstContainer:before
-{
-  content: '';
-  position: absolute;
-  left: 40%;
-  width: 100%; 
-  height: 200%; 
-  background-color: #1b1d21;
-  top: 0;
-  -webkit-transform: rotate(56deg);
-  -moz-transform: rotate(56deg);
-  transform: rotate(56deg);
-  
-} */
-
-.childContainer {
-    position: absolute;
-    left: 5px;
-    right: 5px;
-}
-
-.top-icons {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 10px 15px;
-    border-radius: 10px;
-    z-index: 99999;
-}
-
-.header-icons {
-    color: #fff;
-}
-
-.card-text {
-    display: grid;
-    width: 50%;
 }
 
 .card-center h3:nth-child(2) {
@@ -468,398 +109,13 @@ font-weight:900;
     height: 100%;
 }
 
-.rating_text {
-    color: #E9CC65;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.alter-content {
-    margin-left: 11px;
-    margin-right: 11px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
-/* .card-border
-{
-  border-width: 1px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-     180deg,
-      #52514f, 
-      rgba(0, 0, 0, 0)
-    ) 1; 
- 
-} */
-
-.card-border {
-    width: 150px;
-    border: double 1px transparent;
-    border-radius: 10px;
-    background-image: linear-gradient(#070708, #070708), linear-gradient(to bottom, #52514f, transparent 50%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-}
-
-
-/* .card-border::after  {
-    position: absolute;
-    top: -4px; bottom: -4px;
-    left: -4px; right: -4px;
-    background: linear-gradient(red, blue);
-    content: '';
-    z-index: -1;
-    border-radius: 16px;
-} */
-
-.search-modal {
-    height: 100vh;
-    width: 100vw;
-    border-radius: 0;
-}
-
-.circular-image-border {
-     border: 1px solid #68369A; 
-    border-radius: 50%;
-    padding: 5px;
-    width: 100px;
-    height: 100px;
-}
-/* .fifth-double-slider .item a img::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-    height: 50px;
-    background: url(../../assets/images/icons/cbc.png) no-repeat;
-} */
-.fifth-double-slider .item a::before {}
-.fifth-double-slider .item div {
-    position: relative;
-}
-.fifth-double-slider .item div::before {
-    /* content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 110px;
-    height: 110px;
-    border: solid 10px transparent;
-    border-radius: 50px;
-    background-image: linear-gradient(rgb(236, 82, 82), rgb(233, 53, 53)), 
-                      linear-gradient(to right, green, gold);
-    background-origin: border-box;
-    background-clip: content-box, border-box; */
-    /* content: '';
-    position: absolute;
-    left: -8px;
-    top: -9px;
-    width: 110px;
-    height: 110px;
-    border: solid 1px transparent;
-    border-radius: 100%;
-    background-image: linear-gradient(rgb(0 0 0), rgb(4 4 4)), linear-gradient(to right, #898989, #161616);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    transform: rotate(90deg); */
-}
-
-
-/* Home page  ends*/
-.seventh-main-banner-slider-two .card-center,
-.main-banner-slider-two .card-center {
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.seventh-main-banner-slider-two .card-style,
-.main-banner-slider-two .card-style
- {
-    /* background-image: linear-gradient(180deg, #1D2326 0.15%, #2E513C 230.56%); */
-    background-image: linear-gradient(180deg, #1D2326 0.15%, #0d120f 230.56%);
-}
-
-/* product page */
-
-.active-quick-menu {
-    background-color: #2CAA48;
-    color: #fff;
-}
-
 .product-display-image {
     display: block;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     height:150px;
-    border-radius:10px;
-}
-
-.top-10 {
-    top: 10%;
-}
-
-.odd-bg-color {
-    background-color: #1D2326;
-}
-
-.even-bg-color {
-    background-color: #1D2326;
-}
-
-#menu-sort {
-    background-color: #fff;
-}
-
-#menu-sort h1,
-#menu-sort h2,
-#menu-sort h3,
-#menu-sort h4,
-#menu-sort h5,
-#menu-sort h6,
-#menu-sort span,
-#menu-sort a,
-#menu-sort i {
-    color: #000;
-}
-
-.bg-sort {
-    background-color: #F5F5F5;
-}
-
-.sort-options label {
-    color: #000;
-}
-
-.sort-borders {
-    border-top: 1px solid #c4bdbc;
-    border-bottom: 1px solid #c4bdbc;
-    padding-bottom: 20px;
-}
-
-
-/* product page ends */
-
-
-/* onboarding page */
-
-.card-center-onboard {
-    z-index: 2;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 20%;
-    transform: translateY(-40%);
-}
-
-.text-box {
-    text-align: left;
-}
-
-.next-slide-btn {
-    text-align: center;
-}
-
-.next-slide-btn a {
-    /* background-color: #0f1117;
-    position: relative;
-    top: 50px;
-    width: 100%;
-    z-index: 9999; */
-    background-color: #0f1117;
-    position: relative;
-    top: 50px;
-    width: 100%;
-    height: 50px;
-    z-index: 9999;
-    line-height: 25px;
-    border-radius: 67px;
-}
-
-
-/* onboarding page ends */
-
-
-/* receipe page */
-
-.recipe_img {
-    display: block;
-    width: 300px;
-}
-
-.ingredients-slider {
-    z-index: 50;
-}
-
-.ingredients-slider img {
-    width: 100%;
-}
-
-.ingredients-slider-left .item {
-    margin-left: -25px;
-    margin-right: 25px;
-}
-
-.ingredient-slider-card {
-    background-color: #FFF;
-}
-
-.ingredient-slider-card h1,
-.ingredient-slider-card h2,
-.ingredient-slider-card h3,
-.ingredient-slider-card h4,
-.ingredient-slider-card h5,
-.ingredient-slider-card h6,
-.ingredient-slider-card span,
-.ingredient-slider-card a,
-.ingredient-slider-card i {
-    color: #000;
-}
-
-.ingredient-item {
-    line-height: 5px;
-    padding: 0;
-}
-
-.ingredient-count {
-    padding: 5px;
-    margin-top: -5px;
-}
-
-.nutrition-percent {
-    /* border-radius: 100%;
-    padding: 4px 16px;
-    border: 1px solid #52514f;
-    position: relative; */
-    position: relative;
-    border-radius: 100%;
-    /* padding: 4px 16px; */
-    background-image: linear-gradient(white, white), linear-gradient(30deg, #FBBF24 60%, #F3F4F6 60%), linear-gradient(120deg, yellow 36%, lightgrey 30%), linear-gradient(300deg, blue 36%, lightgrey 30%), linear-gradient(210deg, green 36%, lightgrey 30%);
-    width: 45px;
-    height: 45px;
-    background-position: center center, left top, right top, left bottom, right bottom;
-    border: 5px solid transparent;
-    background-clip: content-box, border-box, border-box, border-box, border-box;
-    background-origin: content-box, border-box, border-box, border-box, border-box;
-    transform: rotate(271deg);
-}
-
-
-.nutrition-percent:nth-child(2) {
-    /* border-radius: 100%;
-    padding: 4px 16px;
-    border: 1px solid #52514f;
-    position: relative; */
-    position: relative;
-    border-radius: 100%;
-    /* padding: 4px 16px; */
-    background-image: linear-gradient(white, white), linear-gradient(30deg, #000000 60%, pink 60%), linear-gradient(120deg, yellow 36%, lightgrey 30%), linear-gradient(300deg, blue 36%, lightgrey 30%), linear-gradient(210deg, green 36%, lightgrey 30%);
-    width: 45px;
-    height: 45px;
-    background-position: center center, left top, right top, left bottom, right bottom;
-    border: 5px solid transparent;
-    background-clip: content-box, border-box, border-box, border-box, border-box;
-    background-origin: content-box, border-box, border-box, border-box, border-box;
-    transform: rotate(271deg);
-}
-
-.nutrition-percent h1 {
-    position: absolute;
-    top: -8px;
-    right: 10px;
-    transform: rotate(85deg);
-}
-
-
-.nutritional-info {
-    border-bottom: 1px solid #EAEAEA;
-}
-
-.servings_circle {
-    /* background: #e3e3e3;
-    border-radius: 50%;
-    color: #000;
-    display: inline-block;
-    font-weight: bold;
-    line-height: 40px;
-    margin-right: 5px;
-    text-align: center;
-    width: 40px; */
-    background: #eaeaea;
-    border-radius: 50%;
-    color: #000;
-    display: inline-block;
-    font-weight: 600;
-    line-height: 44px;
-    margin-right: 5px;
-    text-align: center;
-    width: 44px;
-    font-size: 16px;
-    height: 44px;
-}
-
-.servings_active {
-    background: #2CAA48;
-    color: #fff;
-}
-
-.ingredients_circle_remove {
-    /* background: #e3e3e3;
-    border-radius: 50%;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 42px;
-    margin-right: 5px;
-    text-align: center;
-    width: 42px; */
-    background: #e3e3e3;
-    border-radius: 50%;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 38px;
-    margin-right: 5px;
-    text-align: center;
-    width: 38px;
-    height: 38px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.ingredients_circle_add {
-    background: #2CAA48;
-    border-radius: 50%;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 42px;
-    margin-right: 5px;
-    text-align: center;
-    width: 42px;
-}
-
-#menu-sort .ingredients_circle_add .remove_ingredient {
-    color: #fff;
-}
-
-#cover-spin {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    z-index: 9999;
-    display: none;
+    border-radius:10px!important;
 }
 
 @-webkit-keyframes spin {
@@ -882,32 +138,11 @@ font-weight:900;
     }
 }
 
-#cover-spin::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 48%;
-    top: 40%;
-    width: 40px;
-    height: 40px;
-    border-style: solid;
-    border-color: black;
-    border-top-color: transparent;
-    border-width: 4px;
-    border-radius: 50%;
-    -webkit-animation: spin .8s linear infinite;
-    animation: spin .8s linear infinite;
-}
-
 
 /* recipe page ends */
 
 
 /* cart page */
-
-#cartFirstContainer {
-    border-bottom: 1px solid #313030;
-}
 
 
 /* -- quantity box -- */
@@ -916,237 +151,15 @@ font-weight:900;
     display: inline-block;
 }
 
-.quantity .input-text.qty {
-    width: 36px;
-    height: 20px;
-    text-align: center;
-    background-color: #272727;
-    color: #fff;
-    padding-top:2px;
-    font-weight: 700;
-    border:none;
-}
-
 .fw600 {
     font-weight: 600;
-}
-
-.quantity.buttons_added {
-    /* text-align: left;
-    position: relative;
-    white-space: nowrap;
-    vertical-align: top; */
-    text-align: left;
-    position: relative;
-    white-space: nowrap;
-    padding: 0;
-    background: #272727;
-    vertical-align: top;
-    height: 20px;
-    border-radius: 5px;
-}
-
-.bill_details {
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 1px;
-    opacity: 0.6;
-}
-
-.item_total {
-    font-size: 13px;
-    font-weight: 300;
-    color: #fff;
-    letter-spacing: 1px;
-    opacity: 0.5;
-}
-
-.total_item_amount {
-    font-size: 13px;
-    font-weight: 400;
-    color: #fff;
-    letter-spacing: 1px;
-    opacity: 0.5;
-    float: right;
-}
-
-.fw700 {
-    font-weight: 700;
-}
-
-.ls {
-    letter-spacing: 1px;
-}
-
-.quantity.buttons_added input {
-    display: inline-block;
-    margin: 0;
-    vertical-align: top;
-    box-shadow: none;
-}
-
-.quantity.buttons_added .minus {
-    /* padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0;
-    padding-bottom: 30px;
-    height: 30px;
-    background-color: #3BB440;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    border: none; */
-    height: 20px;
-    align-items: center;
-    line-height: 14px;
-    background-color: #3BB440;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 2px 8px 6px 8px;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    justify-content: center;
-    display: inline-block;
-}
-
-.quantity.buttons_added .plus {
-    /* padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0;
-    height: 30px;
-    background-color: #3BB440;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    border: none; */
-    height: 20px;
-    line-height: 18px;
-    padding: 2px 8px 6px 8px;
-    background-color: #3BB440;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-}
-
-.quantity.buttons_added .minus {
-    border-right: 0;
-}
-
-.quantity.buttons_added .plus {
-    border-left: 0;
-}
-
-.quantity.buttons_added .minus:hover,
-.quantity.buttons_added .plus:hover {
-    background: #3BB440;
 }
 
 .quantity input::-webkit-outer-spin-button,
 .quantity input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    -moz-appearance: none;
     margin: 0;
 }
-
-.quantity.buttons_added .minus:focus,
-.quantity.buttons_added .plus:focus {
-    outline: none;
-}
-
-#priceContainer {
-    border: 2px dashed rgba(255, 255, 255, 0.15);
-    border-right: none;
-    border-left: none;
-}
-
-.fixed-header {
-    position: fixed;
-    background: #070708;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 9999;
-}
-
-
-/* cart page ends */
-
-
-/* paymet page  */
-
-#payFirstContainer {
-    border-bottom: 1px solid #313030;
-}
-
-.payment-option {
-    background-color: #201E1E;
-    border-radius: 9px;
-}
-
-.cvv-input {
-    /* height: 40px;
-    width: 61px;
-    border-radius: 6px;
-    background: #fff;
-    color: #000;
-    padding: 10px; */
-    height: 36px;
-    width: 60px;
-    border-radius: 6px;
-    background: #fff;
-    color: #000;
-    text-align: center;
-    padding: 10px;
-    line-height: 36px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-style: normal;
-}
-
-
-/* paymet page ends */
-
-
-/* receipe page ends */
-
-
-/* instructions */
-
-.instruction-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 250px;
-    width: 100vw;
-}
-
-.steps-div {
-    position: absolute;
-    top: 280px;
-    width: 100vw;
-    height: 60px;
-    border-bottom: 1px solid #1C1C1C;
-}
-
-.slider-buttons {
-    position: absolute;
-    bottom: -10%;
-    width: 100vw;
-    padding: 20px;
-}
-
-
-/* instructions ends */
-
 
 /* quantity buttons */
 .plus-minus-input {
@@ -1159,7 +172,7 @@ font-weight:900;
     padding: 1rem;
     border: 1px solid #761641;
     border-radius:5px;
-    font-size:20px;
+    font-size:20px!important;
 }
 
 .plus-minus-input .input-group-field::-webkit-inner-spin-button, .plus-minus-input .input-group-field ::-webkit-outer-spin-button {
@@ -1184,40 +197,15 @@ font-weight:900;
 
 .danger-text
 {
-    color:#721c24;
+    color:#721c24!important;
     font-size: 18px;
   
 }
 
-#lblCartCount {
-    font-size: 12px;
-    background: #761641;
-    color: #fff;
-    padding: 4px 10px;
-    position:absolute;
-    top:-10px;
-    display:none;
-}
-.badge-two {
-  border-radius: 100%;
-}
-
 .theme-cl
 {
-    color:#761641
+    color:#761641 !important
 }
 /* quantity buttons ends */
-
-@media screen and (min-width: 320px) {
-    .trendingNowText {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .trendingNowText {
-        font-size: 14px;
-    }
-}
 
 
